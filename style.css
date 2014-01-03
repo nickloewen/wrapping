@@ -29,7 +29,10 @@
 @media print {
 	.noPrint { display: none; }
 
-	html { margin: 0; }
+	html {
+		margin: 0;
+		word-wrap: break-word;
+	}
 
 	p {
 		margin: 0; /* Note: the browser may add margins, nevertheless. */
