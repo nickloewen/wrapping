@@ -15,13 +15,21 @@ function generate() {
 
 	for ( var i = 0; i < timesToRun; i++ ) {
 		var newArr = shuffle( wrappingText );
+
 		if ( addSpaces ) {
 			var newText = newArr.join().replace( /,/g, " " );
 			newText = newText.replace( /\b/g, " " );
+			// deal w/ non-alphabetic chars (eg +, &)
+			newText = newText.replace( /([^a-zA-Z\d\s:])/g, " $1 " );
 		} else {
 			var newText = newArr.join().replace( /,/g, "" );
 		}
 		generatedText = generatedText + newText;
+		/*
+		generatedText = generatedText.replace( /</g, "&lt;" );
+		generatedText = generatedText.replace( />/g, "&gt;" );
+		*/
+		console.log( generatedText );
 	}
 
 	$( "generatedText" ).innerHTML = generatedText;

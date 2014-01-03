@@ -17,4 +17,4 @@ the text when it is printed from the browser.
 
 ## Bugs (also 'To Do')
 
-* spacing fails when the text includes non-alphabetical characters (&, +)
+* none known!
