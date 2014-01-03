@@ -17,5 +17,4 @@ the text when it is printed from the browser.
 
 ## Bugs (also 'To Do')
 
-* text generated without spaces doesn't print properly (presumably fixable
-  with a word-break setting)
+* spacing fails when the text includes non-alphabetical characters (&, +)
