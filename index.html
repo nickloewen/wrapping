@@ -1,0 +1,34 @@
+<!doctype HTML>
+<html>
+<head>
+	<title> Wrapping Paper Generator </title>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="noPrint">
+	<h1> Wrapping Paper Generator </h1>
+
+	<p> Generate random text based on someone&rsquo;s name. Works best with short
+	names and nicknames. When printed from the browser, this page will be
+	reformatted so that the generated text fills the page. </p>
+
+	<input type="text" id="wrappingText" placeholder="text to generate" autofocus="autofocus">
+	<button onclick="return generate();">generate</button>
+	<br><br>
+	<span> generate: </span>
+	<input type="checkbox" id="addSpaces" checked> <span> spaces&emsp; </span>
+	<input type="number" step="1" id="charsToGen" value="3060">
+		<span> characters</span> <span> (3060 &asymp; 1 page) </span>
+	<br><br><hr />
+	</div> <!-- .noprint -->
+
+	<p id="generatedText"></p>
+
+	<script src="script.js"></script>
+</body>
+</html>
+

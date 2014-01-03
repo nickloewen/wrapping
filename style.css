@@ -1,0 +1,43 @@
+@media screen { 
+
+	/* The explanation or controls is wrapped in a div.noPrint.
+	 * A side effect of which is that we can style it all in one go. */
+	.noPrint { font-family: 'Source Sans Pro'; }
+
+	body {
+		width: 480px;
+		margin: 0 auto;
+		word-wrap: break-word;
+		font-family: 'Source Code Pro';
+		font-size: 16px;
+	}
+	h1 { font-weight: normal; margin-bottom: 0; }
+	p { margin: 1em 0; }
+	span { margin-right: 1em; }
+
+	input, button { margin: 0 0.5em 0 0; }
+	input[type='number'] { width: 4em; }
+	input[type='text'] { width: 390px; }
+
+	hr {
+		border: none;
+		border-top: 1px solid black;
+		margin: 0;
+	}
+}
+
+@media print {
+	.noPrint { display: none; }
+
+	html {
+		margin: 0;
+		word-wrap: break-word;
+	}
+
+	p {
+		margin: 0; /* Note: the browser may add margins, nevertheless. */
+		font-family: 'Source Code Pro';
+		font-size: 12pt;
+		line-height: 1.3;
+	}
+}
