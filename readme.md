@@ -9,6 +9,10 @@ the text when it is printed from the browser.
 * Browsers insist on adding margins in order to make the printed output fit the page.
   Firefox adds larger margins than Chrome.
 
+## Recommended Symbols
+
+Some fun unicode symbols to play with: ♡ ♥ ❆ ❅ ❄ ☃
+
 ## Potential Improvements ('To Do')
 
 * handle long input better: insure that the input is returned in order at least once
